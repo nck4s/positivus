@@ -1,0 +1,88 @@
+.testimonials {
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .testimonials-header {
+    max-width: 800px;
+    margin: 0 auto 40px;
+  }
+  
+  .testimonials-header h2 {
+    font-size: 32px;
+    font-weight: bold;
+    display: inline-block;
+    background: #caff95;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  
+  .testimonials-header p {
+    font-size: 18px;
+    color: #555;
+    margin-top: 10px;
+  }
+  
+  /* Слайдер */
+  .testimonial-slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background: #000;
+    color: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  /* Стрелки навигации */
+  .nav-arrow {
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #caff95;
+    cursor: pointer;
+  }
+  
+  .nav-arrow.left {
+    position: absolute;
+    left: 20px;
+  }
+  
+  .nav-arrow.right {
+    position: absolute;
+    right: 20px;
+  }
+  
+  /* Индикаторы (точки) */
+  .dots {
+    margin-top: 20px;
+  }
+  
+  .dot {
+    width: 10px;
+    height: 10px;
+    margin: 5px;
+    display: inline-block;
+    background: #555;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .dot.active {
+    background: #caff95;
+  }
+  
+  /* Адаптивность */
+  @media (max-width: 768px) {
+    .testimonial-slider {
+      padding: 30px;
+    }
+  
+    .nav-arrow {
+      font-size: 18px;
+    }
+  }
+  

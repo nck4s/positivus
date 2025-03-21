@@ -1,0 +1,56 @@
+/* Карточка кейса */
+.case-card {
+    flex: 1;
+    text-align: left;
+    padding: 0 20px;
+    position: relative;
+  }
+  
+  .case-card p {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  
+  /* Кнопка Learn more */
+  .learn-more {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    background: none;
+    color: #caff95;
+  }
+  
+  .arrow {
+    margin-left: 8px;
+    font-size: 18px;
+  }
+  
+  /* Разделительная линия */
+  .divider {
+    position: absolute;
+    right: 0;
+    top: 10%;
+    height: 80%;
+    width: 2px;
+    background: rgba(255, 255, 255, 0.3);
+  }
+  
+  /* Убираем линию у последнего кейса */
+  .case-card:last-child .divider {
+    display: none;
+  }
+  
+  /* Адаптивность */
+  @media (max-width: 1024px) {
+    .case-card {
+      padding: 0;
+    }
+  
+    .divider {
+      display: none;
+    }
+  }
+  

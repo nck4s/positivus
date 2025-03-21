@@ -1,0 +1,64 @@
+.team {
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .team-header {
+    max-width: 800px;
+    margin: 0 auto 40px;
+  }
+  
+  .team-header h2 {
+    font-size: 32px;
+    font-weight: bold;
+    display: inline-block;
+    background: #caff95;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  
+  .team-header p {
+    font-size: 18px;
+    color: #555;
+    margin-top: 10px;
+  }
+  
+  /* Грид для карточек */
+  .team-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  
+  /* Кнопка "See all team" */
+  .see-all-btn {
+    margin-top: 20px;
+    background: #000;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .see-all-btn:hover {
+    background-color: #333;
+  }
+  
+  /* Адаптивность */
+  @media (max-width: 1024px) {
+    .team-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .team-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  

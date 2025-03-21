@@ -1,0 +1,31 @@
+.working-process {
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .process-header {
+    max-width: 800px;
+    margin: 0 auto 40px;
+  }
+  
+  .process-header h2 {
+    font-size: 32px;
+    font-weight: bold;
+    display: inline-block;
+    background: #caff95;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  
+  .process-header p {
+    font-size: 18px;
+    color: #555;
+    margin-top: 10px;
+  }
+  
+  /* Контейнер шагов */
+  .process-steps {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
