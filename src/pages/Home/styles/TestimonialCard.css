@@ -1,33 +1,39 @@
 .testimonial-card {
-    max-width: 600px;
+    max-width: 90%;
+    width: 100%;
     text-align: left;
     padding: 20px;
     border-radius: 15px;
-    border: 2px solid #caff95;
+    border: 2px solid #B9FF66;
     position: relative;
+    background-color: #191A23;
   }
   
   /* Стиль текстового пузыря */
   .testimonial-text {
-    font-size: 16px;
-    color: #fff;
-    font-style: italic;
+    font-size: 18px;
+    color: white;
     padding-bottom: 10px;
+    background: transparent;
   }
   
   /* Стиль имени и должности */
   .testimonial-footer {
     margin-top: 10px;
+    background: transparent;
   }
   
   .testimonial-name {
     font-weight: bold;
-    color: #caff95;
-    font-size: 18px;
+    color: #B9FF66;
+    font-size: 20px;
+    background: transparent;
+    font-weight: 400;
   }
   
   .testimonial-role {
-    font-size: 14px;
-    color: #ccc;
+    font-size: 18px;
+    color: white;
+    background: transparent;
   }
   

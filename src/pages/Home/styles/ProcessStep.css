@@ -1,53 +1,122 @@
 .process-step {
-    background: #f4f4f4;
+    background: #B9FF66;
     border-radius: 20px;
-    padding: 20px;
+    padding: 40px 60px;
     margin-bottom: 10px;
     cursor: pointer;
     transition: 0.3s;
     border: 2px solid black;
+    max-width: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    box-shadow: 0px 6px 0px #000; 
+    margin-bottom: 20px;
   }
   
   .process-step.active {
-    background: #caff95;
+    background: #B9FF66;
+    max-width: 100%;
+    width: 100%;
   }
   
   .step-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    text-align: flex-start;
+    max-width: 100%;
+    width: 100%;
+    background: #B9FF66;
+  }
+
+  .step-header h3 {
+    font-size: 30px;
+    font-weight: bold;
+    background: #B9FF66;
+    color:black;
+    font-weight: 500;
+    
   }
   
   .step-number {
-    font-size: 24px;
+    font-size: 60px;
+    line-height: auto;
     font-weight: bold;
-    margin-right: 10px;
+    margin-right: 25px;
+    background: #B9FF66;
+    color: black;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+    font-weight: 500;
   }
   
   .toggle-btn {
-    background: none;
-    border: none;
-    font-size: 24px;
+    width: 48px;
+    height: 48px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: solid 1px black;
+    font-size: 38px;
     cursor: pointer;
+    background: #F3F3F3;
+    color: black;
+    border-radius: 50%; 
+    padding: 0; 
   }
   
   .step-description {
-    margin-top: 10px;
-    font-size: 16px;
+    font-size: 20px;
+    background: #B9FF66;
+    color: black;
   }
   
   /* Адаптивность */
   @media (max-width: 768px) {
     .process-step {
+      display: flex;
+      flex-direction: column; 
+      align-items: center;
+      justify-content: flex-start;
       padding: 15px;
+    }
+    .step-header h3 {
+      font-size: 20px;
+      max-width: 70%;
     }
   
     .step-number {
-      font-size: 20px;
+      font-size: 25px;
     }
   
     .toggle-btn {
+      width: 25px;
+      height: 25px; 
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      border: solid 1px black;
+      font-size: 30px;
+      cursor: pointer;
+      background: #F3F3F3;
+      color: black;
+      border-radius: 50%; 
+      padding: 0; 
+      object-fit: contain;
+    }
+
+    .step-description {
+      align-items: center;
+      text-align: center;
       font-size: 20px;
+      max-width: 90%;
     }
   }
   

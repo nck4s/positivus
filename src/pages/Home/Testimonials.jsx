@@ -1,21 +1,20 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./styles/Testimonials.css";
 import TestimonialCard from "./TestimonialCard";
 
-// Данные отзывов
 const testimonials = [
   {
-    text: "We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence.",
+    text: "We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads...",
     name: "John Smith",
     role: "Marketing Director at XYZ Corp",
   },
   {
-    text: "Positivus has helped our business achieve outstanding results through their digital marketing strategies. We have seen a noticeable improvement in our engagement and brand awareness since partnering with them.",
+    text: "Positivus has helped our business achieve outstanding results through their digital marketing strategies...",
     name: "Jane Doe",
     role: "CEO of ABC Solutions",
   },
   {
-    text: "The expertise and dedication of the Positivus team have significantly contributed to our growth. Their strategies are well-researched and executed flawlessly. Highly recommended!",
+    text: "The expertise and dedication of the Positivus team have significantly contributed to our growth and success in the digital market...",
     name: "Michael Brown",
     role: "Head of Marketing at DEF Ltd",
   },
@@ -29,8 +28,19 @@ const Testimonials = () => {
   };
 
   const prevTestimonial = () => {
-    setCurrentIndex((prevIndex) => (prevIndex - 1 + testimonials.length) % testimonials.length);
+    setCurrentIndex((prevIndex) =>
+      (prevIndex - 1 + testimonials.length) % testimonials.length
+    );
   };
+
+  // ✅ Автопрокрутка
+  useEffect(() => {
+    const interval = setInterval(() => {
+      nextTestimonial();
+    }, 7000); // смена каждые 5 секунд
+
+    return () => clearInterval(interval); // очистка при размонтировании
+  }, [currentIndex]); 
 
   return (
     <section className="testimonials">
@@ -49,7 +59,11 @@ const Testimonials = () => {
 
       <div className="dots">
         {testimonials.map((_, index) => (
-          <span key={index} className={`dot ${index === currentIndex ? "active" : ""}`} onClick={() => setCurrentIndex(index)}></span>
+          <span
+            key={index}
+            className={`dot ${index === currentIndex ? "active" : ""}`}
+            onClick={() => setCurrentIndex(index)}
+          ></span>
         ))}
       </div>
     </section>

@@ -70,5 +70,16 @@
       margin: 0 auto;
       gap: 20px;
     }
+
+    .services-header h2 {  
+      max-width: 45%;
+    }
+
+    .services-header p {
+      color: black;
+      line-height: auto;
+      max-width: 50%;
+      text-align: left;
+    }
   }
   

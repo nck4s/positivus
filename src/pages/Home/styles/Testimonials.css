@@ -1,26 +1,36 @@
 .testimonials {
-    padding: 60px 20px;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100%;
+  width: 100%;
   }
   
   .testimonials-header {
-    max-width: 800px;
-    margin: 0 auto 40px;
+    max-width: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap:40px;
+    margin-bottom: 50px;
   }
   
   .testimonials-header h2 {
-    font-size: 32px;
-    font-weight: bold;
-    display: inline-block;
-    background: #caff95;
-    padding: 5px 10px;
+    font-size: 40px;
+    font-weight: 500;
+    background: #B9FF66;
+    color: black;
+    padding: 0 7px;
     border-radius: 5px;
   }
   
   .testimonials-header p {
     font-size: 18px;
-    color: #555;
-    margin-top: 10px;
+    color: black;
+    max-width: 30%;
   }
   
   /* Слайдер */
@@ -29,12 +39,15 @@
     align-items: center;
     justify-content: center;
     position: relative;
-    background: #000;
+    background: #191A23;
     color: #fff;
     padding: 40px;
-    border-radius: 20px;
-    max-width: 1000px;
+    border-radius: 45px;
+    max-width: 100%;
+    width: 100%;
     margin: 0 auto;
+    max-height: 400px;
+    height: 400px;
   }
   
   /* Стрелки навигации */
@@ -42,7 +55,7 @@
     background: none;
     border: none;
     font-size: 24px;
-    color: #caff95;
+    color: #B9FF66;
     cursor: pointer;
   }
   
@@ -72,17 +85,35 @@
   }
   
   .dot.active {
-    background: #caff95;
+    background: #B9FF66;
   }
   
   /* Адаптивность */
   @media (max-width: 768px) {
+
     .testimonial-slider {
       padding: 30px;
     }
   
     .nav-arrow {
-      font-size: 18px;
+      font-size: 30px;
+    }
+    .nav-arrow.left {
+      position: absolute;
+      left: -25px;
+    }
+    
+    .nav-arrow.right {
+      position: absolute;
+      right: -25px;
+    }
+    .testimonials-header h2 {
+      font-size: 30px;
+      max-width: 70%;
+    }
+    .testimonials-header p {
+      max-width: 60%;
     }
   }
+  
   

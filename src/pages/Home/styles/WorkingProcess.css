@@ -1,31 +1,67 @@
 .working-process {
-    padding: 60px 20px;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 100%;
+    width: 100%;
   }
   
   .process-header {
-    max-width: 800px;
-    margin: 0 auto 40px;
+    max-width: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap:40px;
+    margin-bottom: 50px;
   }
   
   .process-header h2 {
     font-size: 32px;
-    font-weight: bold;
+    font-weight: 500;
     display: inline-block;
-    background: #caff95;
-    padding: 5px 10px;
+    background: #B9FF66;
+    color: black;
+    padding: 0 7px;
     border-radius: 5px;
   }
   
   .process-header p {
     font-size: 18px;
-    color: #555;
-    margin-top: 10px;
+    color: black;
+    max-width: 20%;
   }
   
   /* Контейнер шагов */
   .process-steps {
-    max-width: 800px;
+    max-width: 80%;
+    width: 80%;
     margin: 0 auto;
   }
   
+  @media (max-width: 768px) {
+    .process-steps {  
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      max-width: 100%;
+      width: 100%;
+    }
+    .process-header  {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      text-align: flex-start;
+    }
+
+    .process-header h2 {
+      max-width: 40%;
+    }
+
+    .process-header p {
+      max-width: 50%;
+    }
+  }
