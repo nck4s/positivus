@@ -1,38 +1,50 @@
 .contact-us {
-    padding: 60px 20px;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100%;
+  width: 100%;
+  margin-bottom: 100px;
   }
   
   .contact-header {
-    max-width: 800px;
-    margin: 0 auto 40px;
+    max-width: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap:40px;
+    margin-bottom: 50px;
   }
   
   .contact-header h2 {
-    font-size: 32px;
-    font-weight: bold;
-    display: inline-block;
-    background: #caff95;
-    padding: 5px 10px;
+    font-size: 40px;
+    font-weight: 500;
+    background: #B9FF66;
+    color: black;
+    padding: 0 7px;
     border-radius: 5px;
   }
   
   .contact-header p {
     font-size: 18px;
-    color: #555;
-    margin-top: 10px;
+    color: black;
+    max-width: 20%;
   }
   
   /* Контейнер формы */
   .contact-form-container {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
+    justify-content: space-between;
     gap: 30px;
-    max-width: 900px;
+    max-width: 80%;
+    width: 100%;
     margin: 0 auto;
     background: #f4f4f4;
-    border-radius: 20px;
+    border-radius: 45px;
     padding: 40px;
   }
   
@@ -42,6 +54,7 @@
     flex-direction: column;
     flex: 1;
     max-width: 400px;
+    background: transparent;
   }
   
   .contact-form label {
@@ -49,15 +62,17 @@
     font-weight: bold;
     margin-bottom: 5px;
     text-align: left;
+    background: transparent;
+    color: black;
   }
   
   .contact-form input,
   .contact-form textarea {
     width: 100%;
-    padding: 10px;
+    padding: 14px;
     margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    border: 1px solid black;
+    border-radius: 14px;
     font-size: 14px;
   }
   
@@ -69,15 +84,24 @@
   /* Радиокнопки */
   .contact-options {
     display: flex;
-    gap: 15px;
-    justify-content: left;
+    gap: 35px;
+    justify-content: flex-start;
+    align-items: center;
     margin-bottom: 15px;
+    background: transparent;
+    text-align: center;
+    flex-direction: row;
   }
   
   .contact-options label {
     display: flex;
+    justify-content: center;
     align-items: center;
-    gap: 5px;
+    text-align: center;
+    cursor: pointer;
+    gap: 14px;
+    font-size: 18px;
+    font-weight: 400;
   }
   
   .contact-options input {
@@ -97,12 +121,12 @@
   
   /* Кнопка отправки */
   .contact-form button {
-    background: #000;
+    background: #191A23;
     color: #fff;
     border: none;
-    padding: 12px;
+    padding: 20px;
     font-size: 16px;
-    border-radius: 5px;
+    border-radius: 14px;
     cursor: pointer;
     transition: 0.3s;
   }
@@ -110,21 +134,55 @@
   .contact-form button:hover {
     background: #333;
   }
+
+  .contact-decor {
+    display: flex;
+    position: relative;
+    justify-content: flex-end;
+    align-items: flex-end;
+    background: transparent;
+    margin: 0 auto;
+    padding: 0;
+    left: 33.5%;
+  }
   
   /* Декоративные элементы */
   .contact-decor img {
-    max-width: 200px;
+    max-width: 500px;
+    background: transparent;
+
+    
   }
   
   /* Адаптивность */
   @media (max-width: 768px) {
-    .contact-form-container {
-      flex-direction: column;
-      padding: 30px;
+    .contact-us {
+      max-width: 100%;
+      width: 100%;
+
     }
-  
-    .contact-decor img {
-      max-width: 150px;
+    .contact-form-container {
+      max-width: 100%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+    .contact-form {
+      max-width: 100%;
+      width: 100%;
+    }
+    .contact-header h2 {
+      font-size: 32px;
+
+    }
+    .contact-header p {
+      max-width: 50%;
+    }
+    .contact-decor {
+      display: none;
     }
   }
   
